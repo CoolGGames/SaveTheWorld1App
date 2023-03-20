@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SaveWorld2413.Form</title>
+  <meta charset="utf-8">
+</head>
+  
+  <body>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKoe5KCocEywVeiNq1i6RC-JXuaoSBjuDO14nKAda9ZZd8G0bmXso7FEZpqOaKTk4hjlg&usqp=CAU" width="500" height="300">
+    
+   <header>
+     <h1>Join us as green ambassadors!</h1>
+   </header>
+
+<form action="{{ url_for('submit_form') }}" method="POST">
+ 		<label for="name">Name:</label>
+ 		<input type="text" name="name" id="name" required>
+ 		<label for="contact_number">Contact number:</label>
+ 		<input type="text" name="contactno" id="contact_number" required>
+ 		<label for="aspirations">Aspirations as Green Ambassadors:</label>
+ 		<input type="text" name="aspiration" id="aspirations" required>
+ 		<input type="submit" value="Submit">
+</form>
+
+  </body>
+</html>
