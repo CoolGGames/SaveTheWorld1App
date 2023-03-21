@@ -1,3 +1,7 @@
-.yes {
-   color: red;
-   }
+body {
+  background-image: url("https://www.shutterstock.com/image-vector/closeup-nature-view-green-leaf-260nw-1444727474.jpg");
+  background-size: 100% 150%; 
+
+  text-align: center;
+}
+

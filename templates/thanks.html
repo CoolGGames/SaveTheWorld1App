@@ -4,22 +4,40 @@
 <head>
   <title>SaveWorld2413.Thankyou</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
   
   <body>
 
 <h1>Thank you for submitting the form!</h1>
-    {% if name %}
+<h3>Hi,  {% if name %}
     {{ name }}
-    {% endif %}
+    {% endif %}! 
+  Let's save the Earth together!</h3>
+    
+<img src="https://media.tenor.com/p9aqvE3NtS4AAAAd/iron-man-tony-stark.gif" width="500" height="300">
 
-      {% if contactno %}
-    {{ contactno }}
-    {% endif %}
-
-      {% if aspiration %}
+<h4>
+  Here's the information you've given: </h4>
+    <p>  
+   
+   Contact number: {% if contactno %}
+               {{ contactno }}
+              {% endif %}
+    </p>
+    <p>
+      
+  Aspirations: {% if aspiration %}
     {{ aspiration }}
     {% endif %}
+</p>
+  
+    <h5>Here are the links to two educational videos about the environment!</h5>
+    <p>Choose between these two environmental videos :)</p>
+
+   <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Protect the Environment at all costs!</a>
+    <p>OR</p>
+    <a href="https://www.youtube.com/watch?v=X2YgM1Zw4_E">Ways to Protect our Mother Earth</a>
     
   </body>
 </html>
